@@ -5,6 +5,6 @@ class Product(Base):
     __tablename__ = "products"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    description = Column(String, nullable=True)
+    name = Column(String(255), index=True)
+    description = Column(String(1000), nullable=True)
     price = Column(Integer)
